@@ -6,6 +6,7 @@
  🎄🎄🎄🎄  
 🎄🎄🎄🎄🎄  
   🎁🎁🎁
+  
 The solutions are automatically tested with github-actions.
 
 [![Build Status](https://github.com/vidalmaxime/adventofcode-2020/workflows/CI/badge.svg)](https://github.com/vidalmaxime/adventofcode-2020/actions?query=branch%3Amaster)
