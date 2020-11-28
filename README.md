@@ -83,7 +83,7 @@ maxime   6448      4.84 ms    cpp
 -----  --------  -----------  ---
 ```
 
-You can use `-r` to run each submission on it's own input, or `-e` to print non-aggregated results.  
+You can use `-r` to run each submission on its own input, or `-e` to print non-aggregated results.  
 see `./aoc run -h` for full arguments description.
 
 ## Add your solution !
