@@ -1,0 +1,28 @@
+{
+  "name": "adventofcode-2020",
+  "version": "0.1.0",
+  "description": "repository of proposed solutions to Advent Of Code 2020 edition",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vidalmaxime/adventofcode-2020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vidalmaxime/adventofcode-2020/issues"
+  },
+  "homepage": "https://github.com/vidalmaxime/adventofcode-2020#readme",
+  "dependencies": {
+    "lodash": ">=4.17.13",
+    "ts-node": "^8.5.4",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.3"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.149"
+  }
+}

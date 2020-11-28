@@ -1,4 +1,6 @@
-# Advent of code 2019 solutions
+# Advent of Code 2020 - Mathis Group
+<div align="center">      
+
 
 ⁣    🌟  
     🎄  
@@ -8,9 +10,10 @@
 🎄🎄🎄🎄🎄  
   🎁🎁🎁
 
+</div>
 The solutions are automatically tested with github-actions.
 
-[![Build Status](https://github.com/lypnol/adventofcode-2019/workflows/CI/badge.svg)](https://github.com/lypnol/adventofcode-2019/actions?query=branch%3Amaster)
+[![Build Status](https://github.com/vidalmaxime/adventofcode-2020/workflows/CI/badge.svg)](https://github.com/vidalmaxime/adventofcode-2020/actions?query=branch%3Amaster)
 
 
 ## Install requirements
@@ -25,7 +28,7 @@ Use `./aoc` script
 ```
 usage: aoc <command> [<args>]
 
-aoc commands are:
+aoc commands are:````
    run      Runs submissions
    create   Creates a new submission
    config   Configures user's parameters
@@ -88,6 +91,8 @@ You can use `-r` to run each submission on it's own input, or `-e` to print non-
 see `./aoc run -h` for full arguments description.
 
 ## Add your solution !
+
+Create a new branch (e.g `[username]/day-[number]`)
 
 For now we support `c`, `c++`, `java`, `javascript`, `typescript` , `go`, `python 3` (+ `cython`), `ruby`, `rust (stable)` and `bash` scripts.
 
