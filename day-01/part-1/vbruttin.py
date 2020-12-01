@@ -8,5 +8,5 @@ class VbruttinSubmission(SubmissionPy):
         # Your code goes here
         entries = list(map(int, s.split()))
         for entry in entries:
-            if entry < 2020 and (opposite_entry := 2020 - entry) in entries:
-                return opposite_entry * entry
+            if entry < 2020 and (2020 - entry) in entries:
+                return (2020 - entry) * entry
