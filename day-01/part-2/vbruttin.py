@@ -9,8 +9,7 @@ class VbruttinSubmission(SubmissionPy):
         # Your code goes here
         entries = list(map(int, s.split()))
         for entry_1 in entries:
-            if entry_1 < 2020:
-                new_target = 2020 - entry_1
+            if (new_target := 2020 - entry_1) > 0:
                 for entry_2 in entries:
-                    if entry_2 < new_target and (new_target - entry_2) in entries:
-                        return (new_target - entry_2) * entry_1 * entry_2
+                    if (opposite_entry := new_target - entry_2) > 0 and opposite_entry in entries:
+                            return opposite_entry * entry_1 * entry_2
