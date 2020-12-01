@@ -13,10 +13,11 @@ The solutions are automatically tested with github-actions.
 
 
 ## Install requirements
-After creating a conda/virtualenv environment, run
+If using Python, creating a conda/virtualenv environment, run
 ```bash
 pip install -r requirements.txt
 ```
+Python3 up until 3.9 is supported.
 ## Usage
 
 Use `./aoc` script
