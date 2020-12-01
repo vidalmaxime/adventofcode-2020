@@ -8,6 +8,9 @@ class VbruttinSubmission(SubmissionPy):
         # :return: solution flag
         # Your code goes here
         entries = list(map(int, s.split()))
-        for entry, entry_2 in combinations(entries, 2):
-            if (opposite_entry := 2020 - entry - entry_2) in entries:
-                return opposite_entry * entry * entry_2
+        for entry_1 in entries:
+            if (new_target := 2020 - entry_1) > 0:
+                for entry_2 in entries:
+                    if (final_target := new_target - entry_2) > 0:
+                        if (opposite_entry := final_target) in entries:
+                            return opposite_entry * entry_1 * entry_2
