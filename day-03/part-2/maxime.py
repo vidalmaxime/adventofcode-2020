@@ -1,6 +1,4 @@
 from tool.runners.python import SubmissionPy
-import numpy as np
-
 
 class MaximeSubmission(SubmissionPy):
 
