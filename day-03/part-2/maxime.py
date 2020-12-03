@@ -1,5 +1,6 @@
 from tool.runners.python import SubmissionPy
 
+
 class MaximeSubmission(SubmissionPy):
 
     def run(self, s):
