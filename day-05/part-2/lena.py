@@ -1,9 +1,7 @@
 from tool.runners.python import SubmissionPy
-import numpy as np
 
 class LenaSubmission(SubmissionPy):
     
-
     def run(self, s):
         seats = s.split()
         numbers = []
@@ -12,5 +10,3 @@ class LenaSubmission(SubmissionPy):
             numbers.append(int(binary[:-3],2)*8 + int(binary[-3:],2))
             missing = set(range(min(numbers), max(numbers)))-set(numbers)
         return list(missing)[0]
-
-    
