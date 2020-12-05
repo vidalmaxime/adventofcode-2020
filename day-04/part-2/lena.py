@@ -29,7 +29,6 @@ class LenaSubmission(SubmissionPy):
         			v+=1
         		if (pos1 == 'pid') and (len(pos2)==9) and (pos2.isdigit()):
         			v+=1
-        		print(v)
         	if v == len(needed):
         		counter+=1
         return counter
