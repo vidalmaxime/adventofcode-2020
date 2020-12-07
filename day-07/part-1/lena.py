@@ -18,17 +18,18 @@ class LenaSubmission(SubmissionPy):
         count = 0
         for rule in rules:
             trail = []
-            if self.lookIn(rule,trail, rules):
+            if lookIn(rule,trail, rules):
                 count += 1
         return count-1
 
-    def lookIn(self,outerBag, trail, rules):
-        if 'shiny gold' in outerBag:
-            return True
-        else:
-            for innerBag in rules[outerBag]:
-                if innerBag not in trail:
-                    trail.append(innerBag)
-                    if self.lookIn(innerBag, trail, rules):
-                        return True
-            return False
+    
+def lookIn(outerBag, trail, rules):
+    if 'shiny gold' in outerBag:
+        return True
+    else:
+        for innerBag in rules[outerBag]:
+            if innerBag not in trail:
+                trail.append(innerBag)
+                if lookIn(innerBag, trail, rules):
+                    return True
+        return False

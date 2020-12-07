@@ -15,14 +15,14 @@ class LenaSubmission(SubmissionPy):
             for bag in inner:
                 rules[outer][bag[1]]=int(bag[0])
         
-        return self.countBags('shiny gold', rules)
+        return countBags('shiny gold', rules)
 
-    def countBags(self,outerBag,rules):
-        count = 0
-        if len(rules[outerBag]):
-            for innerBag in rules[outerBag]:
-                count+= rules[outerBag][innerBag]
-                count += rules[outerBag][innerBag]*self.countBags(innerBag, rules)
-            return count
-        else:
-            return 0
+def countBags(outerBag,rules):
+    count = 0
+    if len(rules[outerBag]):
+        for innerBag in rules[outerBag]:
+            count+= rules[outerBag][innerBag]
+            count += rules[outerBag][innerBag]*countBags(innerBag, rules)
+        return count
+    else:
+        return 0
