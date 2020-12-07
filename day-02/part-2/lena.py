@@ -8,7 +8,7 @@ class LenaSubmission(SubmissionPy):
         counter = 0
         for l in List:
         	pos, letter, pw = l.split()
-        	[pos1, pos2] = pos.split("-")
+        	pos.split("-")
         	l1  = pw[int(pos1)-1]
         	l2 = pw[int(pos2)-1]
         	if (l1 == letter[0] and l2 != letter [0]) or (l1 != letter[0] and l2 == letter [0]):
