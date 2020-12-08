@@ -20,7 +20,3 @@ class LenaSubmission(SubmissionPy):
                 i+=1
         
         return acc
-
-
-
-

@@ -47,4 +47,3 @@ class LenaSubmission(SubmissionPy):
                 elif inst[0] == 'jmp':
                     i+=int(inst[1])
                     continue
-
