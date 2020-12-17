@@ -6,7 +6,7 @@ class LenaSubmission(SubmissionPy):
 part two doesn't work and i cannot find the part where things go wrong... so this is done using lucas' part 2
 '''
     def run(self, s):
-    	rules, mine, nearby = [x.split('\n') for x in s.split('\n\n')]
+        rules, mine, nearby = [x.split('\n') for x in s.split('\n\n')]
         mine = [int(x) for x in mine[1].split(',')]
         
         rule_names = [rule.split(': ')[0] for rule in rules]
